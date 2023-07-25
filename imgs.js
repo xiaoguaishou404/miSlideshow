@@ -44,6 +44,10 @@ const imgs2 = [
     {
         imageName: "./images/01.jpg",
     },
+
+
+
+
     // 可以继续增加图片
 ];
-export  {imgs1,imgs2}
+export { imgs1, imgs2 }

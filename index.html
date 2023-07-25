@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div>支持无线播放,但是不是滚动的</div>
   <div class="slideBox1">
     <div class="slide-box">
       <div class="banner-box"></div>
@@ -18,7 +19,7 @@
       <div class="pagination-box"></div>
     </div>
   </div>
-
+  <div>以前做的结束组件,支持无线播放，但是不是滚动的</div>
   <div class="slideBox2">
     <div class="slide-box">
       <div class="banner-box"></div>
@@ -27,18 +28,25 @@
       <div class="pagination-box"></div>
     </div>
   </div>
+  <div>刚做的无线播放，但是鼠标滑动没完成</div>
+  <div class="slideBox3">
+    <div class="slide-box">
+      <div class="banner-box"></div>
+      <button class="slide-left-btn material-icons">arrow_back_ios</button>
+      <button class="slide-right-btn material-icons">arrow_forward_ios</button>
+      <div class="pagination-box"></div>
+    </div>
+  </div>
+  
 
   <script type="module">
+    // 因为使用了ES Modules 所以预览此文件不能使用file协议，需要使用http
     import SlideShow from "./SlideShow.js"
+    import SlideShow2 from "./SlideShow2.js"
     import { imgs1, imgs2 } from "./imgs.js"
-
-
-    new SlideShow(document.querySelector('.slideBox1'), imgs1)
-
-
-
+    new SlideShow(document.querySelector('.slideBox1'), imgs1).init()
     new SlideShow(document.querySelector('.slideBox2'), imgs2).init()
-
+    new SlideShow2(document.querySelector('.slideBox3'), imgs2)
   </script>
 
 </body>
